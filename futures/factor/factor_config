@@ -1,0 +1,42 @@
+strategy_config = {
+    "symbols": ["BTCUSDT","ETHUSDT","XRPUSDT","BCHUSDT","LTCUSDT","ADAUSDT","ETCUSDT","TRXUSDT","DOTUSDT","DOGEUSDT"],
+    "leader_btc": "BTCUSDT",
+    "leader_eth": "ETHUSDT",
+
+    "group_pow": ["BCHUSDT","ETCUSDT"],
+    "group_platform": ["ADAUSDT","DOTUSDT"],
+    "group_meme": ["DOGEUSDT","TRXUSDT"],
+    "group_other": ["BTCUSDT","ETHUSDT","XRPUSDT","LTCUSDT"],
+
+    "leadlag_lags": [1, 3],
+    "leadlag_lookback": 720,           # minutes
+
+    "momentum_windows": [30, 60, 90],  # minutes
+    "beta_lookback": 720,              # minutes
+
+    "reversal_windows": [1, 2, 3],
+
+    "vr_q": 30,
+    "vr_gate_strength": 1.0,
+
+    "roll_cov_window": 60,
+    "cost_kappa": 0.5,
+
+    "forecast_horizon": 15,
+    "ic_halflife": 600.0,              # minutes
+    "softmax_beta": 6.0,
+    "min_group_size": 3,
+    "shrink_lambda": 0.6,
+
+    "top_n": 3,
+    "bottom_n": 3,
+    "include_leaders_in_trading": False,
+    "gross_limit": 1.0,                # must be <= 1.0
+    "zscore_clip": 3.0
+}
+
+
+
+
+
+
